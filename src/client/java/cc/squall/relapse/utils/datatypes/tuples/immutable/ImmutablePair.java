@@ -1,8 +1,8 @@
 package cc.squall.relapse.utils.datatypes.tuples.immutable;
 
 
-import cc.squall.client.utils.datatypes.tuples.Pair;
-import cc.squall.client.utils.datatypes.tuples.Unit;
+import cc.squall.relapse.utils.datatypes.tuples.Pair;
+import cc.squall.relapse.utils.datatypes.tuples.Unit;
 
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;

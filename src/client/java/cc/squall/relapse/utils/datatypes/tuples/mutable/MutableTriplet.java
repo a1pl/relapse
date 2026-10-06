@@ -1,7 +1,7 @@
 package cc.squall.relapse.utils.datatypes.tuples.mutable;
 
 
-import cc.squall.client.utils.datatypes.tuples.Triplet;
+import cc.squall.relapse.utils.datatypes.tuples.Triplet;
 
 import java.util.function.UnaryOperator;
 

@@ -1,7 +1,6 @@
 package cc.squall.relapse.utils.datatypes.collections;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class BiMap<K, V> {
     private enum Null { INSTANCE }
@@ -20,7 +19,6 @@ public class BiMap<K, V> {
         this.backwardMap = new HashMap<>(size);
     }
 
-    @SuppressWarnings("unchecked")
     private static <T> Object mask(T value) {
         return value == null ? NULL : value;
     }
@@ -75,5 +73,21 @@ public class BiMap<K, V> {
             Object mk = backwardMap.remove(mv);
             forwardMap.remove(mk);
         }
+    }
+
+    public Set<K> getKeys() {
+        Set<K> keys = new HashSet<>(forwardMap.size());
+        for (Object mk : forwardMap.keySet()) {
+            keys.add(unmask(mk));
+        }
+        return Collections.unmodifiableSet(keys);
+    }
+
+    public Set<V> getValues() {
+        Set<V> values = new HashSet<>(backwardMap.size());
+        for (Object mv : backwardMap.keySet()) {
+            values.add(unmask(mv));
+        }
+        return Collections.unmodifiableSet(values);
     }
 }

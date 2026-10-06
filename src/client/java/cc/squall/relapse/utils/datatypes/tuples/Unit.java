@@ -1,6 +1,6 @@
 package cc.squall.relapse.utils.datatypes.tuples;
 
-import cc.squall.client.utils.datatypes.tuples.immutable.ImmutableUnit;
+import cc.squall.relapse.utils.datatypes.tuples.immutable.ImmutableUnit;
 
 import java.io.Serializable;
 import java.util.Objects;

@@ -1,7 +1,7 @@
 package cc.squall.relapse.utils.datatypes.tuples.immutable;
 
 
-import cc.squall.client.utils.datatypes.tuples.Unit;
+import cc.squall.relapse.utils.datatypes.tuples.Unit;
 
 import java.util.function.Consumer;
 import java.util.function.Function;

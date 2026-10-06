@@ -1,31 +1,25 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "relapse",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Relapse",
+	"description": "Relapse client",
 	"authors": [
-		"Me!"
+		"sunsuke"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
+	"icon": "assets/relapse/icon.png",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
 		"client": [
-			"com.example.client.ExampleModClient"
+			"cc.squall.relapse.Client"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "relapse.client.mixins.json",
 			"environment": "client"
 		}
 	],
